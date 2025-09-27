@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace LibraryFor1DArray
+namespace ArraysForParameters
 {
    public class MethodsFor1DArray
    {

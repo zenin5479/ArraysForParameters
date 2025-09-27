@@ -32,7 +32,6 @@ namespace ArraysForParameters
 
          return n;
       }
-
    }
 
    //setlocale(LC_ALL, "Russian");

@@ -1,1 +1,1 @@
-# ArraysForParameters
+# Массивы в качестве параметров

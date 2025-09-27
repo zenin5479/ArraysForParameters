@@ -6,8 +6,33 @@ namespace ArraysForParameters
    {
       static void Main(string[] args)
       {
-         Console.WriteLine("Hello World!");
+         int n;
+         int size = NumberArrayElements();
+
+         //float* C;
+         //float* P;
+
+
+         Console.ReadKey();
       }
+
+      public static int NumberArrayElements()
+      {
+         int n;
+         do
+         {
+            Console.WriteLine("Введите размер векторов:");
+            int.TryParse(Console.ReadLine(), out n);
+            //n = Convert.ToInt32(Console.ReadLine());
+            if (n <= 0 || n > 20)
+            {
+               Console.WriteLine("Введено не верное значение");
+            }
+         } while (n <= 0 || n > 20);
+
+         return n;
+      }
+
    }
 
    //setlocale(LC_ALL, "Russian");

@@ -6,8 +6,10 @@ namespace ArraysForParameters
    {
       static void Main(string[] args)
       {
-         int n;
+         int n = 0;
          int size = NumberArrayElements();
+         double[] vectorC = new double[n];
+         double[] vectorP = new double[n];
 
          //float* C;
          //float* P;

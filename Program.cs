@@ -32,8 +32,7 @@ namespace ArraysForParameters
 
       public static double[] EnterArrayDouble(string vector, string nameArray)
       {
-         
-         
+         return new double[] { };
       }
 
       public static int NumberArrayElements()

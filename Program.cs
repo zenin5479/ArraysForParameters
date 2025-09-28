@@ -8,8 +8,8 @@ namespace ArraysForParameters
       {
          int n = 0;
          int size = NumberArrayElements();
-         double[] vectorC = new double[n];
-         double[] vectorP = new double[n];
+         double[] vectorC = new double[size];
+         double[] vectorP = new double[size];
 
          Console.WriteLine("Задайте элементы массива А");
          for (int i = 0; i < vectorC.Length; i++)
@@ -19,11 +19,11 @@ namespace ArraysForParameters
          }
 
          // *Это можно не выводить
-         //Console.WriteLine("Массив: ");
-         //for (int i = 0; i < vectorC.Length; i++)
-         //{
-         //   Console.WriteLine("{0:f} ", vectorC[i]);
-         //}
+         Console.WriteLine("Массив: ");
+         for (int i = 0; i < vectorC.Length; i++)
+         {
+            Console.WriteLine("{0:f} ", vectorC[i]);
+         }
          // *
 
          Console.ReadKey();

@@ -28,7 +28,7 @@ namespace ArraysForParameters
 
       public static double[] EnterArrayDouble(string vector, string name)
       {
-         Console.WriteLine("Задайте элементы массива А");
+         Console.WriteLine("Задайте элементы массива {0}:", name);
          for (int i = 0; i < vectorC.Length; i++)
          {
             double.TryParse(Console.ReadLine(), out vectorC[i]);

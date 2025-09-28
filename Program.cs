@@ -8,22 +8,13 @@ namespace ArraysForParameters
    {
       static void Main(string[] args)
       {
-         string name1DArray = "P";
-         string name2DArray = "A";
-         string nameFile1DArray = "p.txt";
-         string nameFile2DArray = "a.txt";
-         string nameFileInput = "finish.txt";
-
+         string nameArrayOne = "C";
+         string nameArrayTwo = "P";
          int size = NumberArrayElements();
          double[] vectorC = new double[size];
          double[] vectorP = new double[size];
 
-         Console.WriteLine("Задайте элементы массива А");
-         for (int i = 0; i < vectorC.Length; i++)
-         {
-            double.TryParse(Console.ReadLine(), out vectorC[i]);
-            //vectorC[i] = Convert.ToDouble(Console.ReadLine());
-         }
+
 
          // *Это можно не выводить
          Console.WriteLine("Массив: ");
@@ -36,8 +27,15 @@ namespace ArraysForParameters
          Console.ReadKey();
       }
 
-      public static double[] EnterArrayDouble(string vector, string nameArray)
+      public static double[] EnterArrayDouble(string vector, string name)
       {
+         Console.WriteLine("Задайте элементы массива А");
+         for (int i = 0; i < vectorC.Length; i++)
+         {
+            double.TryParse(Console.ReadLine(), out vectorC[i]);
+            //vectorC[i] = Convert.ToDouble(Console.ReadLine());
+         }
+
          return new double[] { };
       }
 

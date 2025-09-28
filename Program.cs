@@ -6,7 +6,6 @@ namespace ArraysForParameters
    {
       static void Main(string[] args)
       {
-         int n = 0;
          int size = NumberArrayElements();
          double[] vectorC = new double[size];
          double[] vectorP = new double[size];

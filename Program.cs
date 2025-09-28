@@ -29,7 +29,7 @@ namespace ArraysForParameters
          {
             vector[i] = vector[i];
             //Console.Write("{0:f2} ", vector[i]);
-            Console.Write("{0:f} ", vector[i]);
+            //Console.Write("{0:f} ", vector[i]);
             Console.Write("{0} ", vector[i]);
             i++;
          }

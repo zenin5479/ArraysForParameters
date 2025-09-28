@@ -15,8 +15,16 @@ namespace ArraysForParameters
          for (int i = 0; i < vectorC.Length; i++)
          {
             double.TryParse(Console.ReadLine(), out vectorC[i]);
-            vectorC[i] = Convert.ToDouble(Console.ReadLine());
+            //vectorC[i] = Convert.ToDouble(Console.ReadLine());
          }
+
+         // *Это можно не выводить
+         Console.WriteLine("Массив: ");
+         for (int i = 0; i < vectorC.Length; i++)
+         {
+            Console.WriteLine("{0:f} ", vectorC[i]);
+         }
+         // *
 
          Console.ReadKey();
       }

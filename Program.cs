@@ -21,16 +21,16 @@ namespace ArraysForParameters
          Console.ReadKey();
       }
 
-      public static void InputArrayDouble(double[] inputArray, string name)
+      public static void InputArrayDouble(double[] vector, string name)
       {
          Console.WriteLine("Введен вектор {0}:", name);
          int i = 0;
-         while (i < inputArray.Length)
+         while (i < vector.Length)
          {
-            inputArray[i] = inputArray[i];
-            //Console.Write("{0:f2} ", inputArray[i]);
-            //Console.Write("{0:f} ", inputArray[i]);
-            Console.Write("{0} ", inputArray[i]);
+            vector[i] = vector[i];
+            Console.Write("{0:f2} ", vector[i]);
+            Console.Write("{0:f} ", vector[i]);
+            Console.Write("{0} ", vector[i]);
             i++;
          }
 

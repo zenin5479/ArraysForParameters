@@ -14,8 +14,8 @@ namespace ArraysForParameters
          Console.WriteLine("Задайте элементы массива А");
          for (int i = 0; i < vectorC.Length; i++)
          {
-            //double.TryParse(Console.ReadLine(), out vectorC[i]);
-            vectorC[i] = Convert.ToDouble(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out vectorC[i]);
+            //vectorC[i] = Convert.ToDouble(Console.ReadLine());
          }
 
          // *Это можно не выводить

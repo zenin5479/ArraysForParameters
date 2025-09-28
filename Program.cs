@@ -15,7 +15,6 @@ namespace ArraysForParameters
          double[] vectorP = new double[size];
 
 
-
          // *Это можно не выводить
          Console.WriteLine("Массив: ");
          for (int i = 0; i < vectorC.Length; i++)

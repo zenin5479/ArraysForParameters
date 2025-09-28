@@ -13,7 +13,6 @@ namespace ArraysForParameters
          string nameArrayTwo = "P";
          int size = NumberArrayElements();
          double[] vectorC = EnterArrayDouble(size, nameArrayOne);
-
          double[] vectorP = EnterArrayDouble(size, nameArrayTwo);
 
          // *Это можно не выводить
@@ -35,7 +34,7 @@ namespace ArraysForParameters
          for (int i = 0; i < vector.Length; i++)
          {
             double.TryParse(Console.ReadLine(), out vector[i]);
-            vector[i] = Convert.ToDouble(Console.ReadLine());
+            //vector[i] = Convert.ToDouble(Console.ReadLine());
          }
 
          return new double[] { };

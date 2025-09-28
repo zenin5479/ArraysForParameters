@@ -37,8 +37,6 @@ namespace ArraysForParameters
             Console.Write("Введите элемент под номером {0}: ", i);
             double.TryParse(Console.ReadLine(), out vector[i]);
             //vector[i] = Convert.ToDouble(Console.ReadLine());
-
-
             i++;
          }
 

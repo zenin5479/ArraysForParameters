@@ -15,6 +15,8 @@ namespace ArraysForParameters
          int size = NumberArrayElements();
          double[] vectorC = EnterArrayDouble(size, nameArrayOne);
          double[] vectorP = EnterArrayDouble(size, nameArrayTwo);
+         InputArrayDouble(vectorC, nameArrayOne);
+         InputArrayDouble(vectorP, nameArrayTwo);
 
          // *Это можно не выводить
          //Console.WriteLine("Массив: ");
@@ -27,24 +29,20 @@ namespace ArraysForParameters
          Console.ReadKey();
       }
 
-      public static double[] InputArrayDouble(double[] inputArray, int n, string name)
+      public static void InputArrayDouble(double[] inputArray, string name)
       {
-         //printf("Введен вектор С\n");
-         
          Console.WriteLine("Введен вектор {0}:", name);
-         double[] outputArray = new double[n];
          int i = 0;
-         while (i < n)
+         while (i < inputArray.Length)
          {
-            outputArray[i] = inputArray[i];
-            Console.Write("{0:f2} ", outputArray[i]);
-            Console.Write("{0:f} ", outputArray[i]);
-            Console.Write("{0} ", outputArray[i]);
+            inputArray[i] = inputArray[i];
+            Console.Write("{0:f2} ", inputArray[i]);
+            Console.Write("{0:f} ", inputArray[i]);
+            Console.Write("{0} ", inputArray[i]);
             i++;
          }
 
          Console.WriteLine();
-         return outputArray;
       }
 
       public static double[] EnterArrayDouble(int size, string name)

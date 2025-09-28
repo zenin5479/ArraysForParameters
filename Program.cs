@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Drawing;
 
 //Массивы в качестве параметров
+// Homework_2._4
 
 namespace ArraysForParameters
 {

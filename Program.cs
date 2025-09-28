@@ -19,11 +19,11 @@ namespace ArraysForParameters
          }
 
          // *Это можно не выводить
-         Console.WriteLine("Массив: ");
-         for (int i = 0; i < vectorC.Length; i++)
-         {
-            Console.WriteLine("{0:f} ", vectorC[i]);
-         }
+         //Console.WriteLine("Массив: ");
+         //for (int i = 0; i < vectorC.Length; i++)
+         //{
+         //   Console.WriteLine("{0:f} ", vectorC[i]);
+         //}
          // *
 
          Console.ReadKey();

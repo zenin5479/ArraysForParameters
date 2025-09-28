@@ -29,7 +29,7 @@ namespace ArraysForParameters
          Console.ReadKey();
       }
 
-      public static double[] InputArrayDouble(double[] inputArray, int n, string name)
+      public static void InputArrayDouble(double[] inputArray, string name)
       {
          Console.WriteLine("Введен вектор {0}:", name);
          int i = 0;

@@ -32,7 +32,7 @@ namespace ArraysForParameters
          for (int i = 0; i < vectorC.Length; i++)
          {
             double.TryParse(Console.ReadLine(), out vectorC[i]);
-            //vectorC[i] = Convert.ToDouble(Console.ReadLine());
+            vectorC[i] = Convert.ToDouble(Console.ReadLine());
          }
 
          return new double[] { };

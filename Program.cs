@@ -29,10 +29,10 @@ namespace ArraysForParameters
       public static double[] EnterArrayDouble(int size, string name)
       {
          double[] vector = new double[size];
-
-         Console.WriteLine("Задайте элементы массива {0}:", name);
+         Console.WriteLine("Введите вектор {0}", name);
          for (int i = 0; i < vector.Length; i++)
          {
+            Console.Write("Введите элемент под номером {0}: ", i);
             double.TryParse(Console.ReadLine(), out vector[i]);
             //vector[i] = Convert.ToDouble(Console.ReadLine());
          }

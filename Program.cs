@@ -27,6 +27,26 @@ namespace ArraysForParameters
          Console.ReadKey();
       }
 
+      public static double[] InputArrayDouble(double[] inputArray, int n, string name)
+      {
+         //printf("Введен вектор С\n");
+         
+         Console.WriteLine("Введен вектор {0}:", name);
+         double[] outputArray = new double[n];
+         int i = 0;
+         while (i < n)
+         {
+            outputArray[i] = inputArray[i];
+            Console.Write("{0:f2} ", outputArray[i]);
+            Console.Write("{0:f} ", outputArray[i]);
+            Console.Write("{0} ", outputArray[i]);
+            i++;
+         }
+
+         Console.WriteLine();
+         return outputArray;
+      }
+
       public static double[] EnterArrayDouble(int size, string name)
       {
          double[] vector = new double[size];
@@ -39,8 +59,6 @@ namespace ArraysForParameters
             //vector[i] = Convert.ToDouble(Console.ReadLine());
             i++;
          }
-
-
 
          return vector;
       }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 //Массивы в качестве параметров
 
@@ -11,28 +12,30 @@ namespace ArraysForParameters
          string nameArrayOne = "C";
          string nameArrayTwo = "P";
          int size = NumberArrayElements();
-         double[] vectorC = new double[size];
-         double[] vectorP = new double[size];
+         double[] vectorC = EnterArrayDouble(size, nameArrayOne);
 
+         double[] vectorP = EnterArrayDouble(size, nameArrayTwo);
 
          // *Это можно не выводить
-         Console.WriteLine("Массив: ");
-         for (int i = 0; i < vectorC.Length; i++)
-         {
-            Console.WriteLine("{0:f} ", vectorC[i]);
-         }
+         //Console.WriteLine("Массив: ");
+         //for (int i = 0; i < vectorC.Length; i++)
+         //{
+         //   Console.WriteLine("{0:f} ", vectorC[i]);
+         //}
          // *
 
          Console.ReadKey();
       }
 
-      public static double[] EnterArrayDouble(string vector, string name)
+      public static double[] EnterArrayDouble(int size, string name)
       {
+         double[] vector = new double[size];
+
          Console.WriteLine("Задайте элементы массива {0}:", name);
-         for (int i = 0; i < vectorC.Length; i++)
+         for (int i = 0; i < vector.Length; i++)
          {
-            double.TryParse(Console.ReadLine(), out vectorC[i]);
-            vectorC[i] = Convert.ToDouble(Console.ReadLine());
+            double.TryParse(Console.ReadLine(), out vector[i]);
+            vector[i] = Convert.ToDouble(Console.ReadLine());
          }
 
          return new double[] { };

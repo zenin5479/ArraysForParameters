@@ -11,8 +11,7 @@ namespace ArraysForParameters
          double[] vectorC = new double[n];
          double[] vectorP = new double[n];
 
-         //float* C;
-         //float* P;
+        
 
 
          Console.ReadKey();

@@ -1,6 +1,6 @@
 ﻿using System;
-using System.IO;
-using System.Text;
+
+//Массивы в качестве параметров
 
 namespace ArraysForParameters
 {
@@ -8,6 +8,12 @@ namespace ArraysForParameters
    {
       static void Main(string[] args)
       {
+         string name1DArray = "P";
+         string name2DArray = "A";
+         string nameFile1DArray = "p.txt";
+         string nameFile2DArray = "a.txt";
+         string nameFileInput = "finish.txt";
+
          int size = NumberArrayElements();
          double[] vectorC = new double[size];
          double[] vectorP = new double[size];

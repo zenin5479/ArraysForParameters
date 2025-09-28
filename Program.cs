@@ -36,8 +36,8 @@ namespace ArraysForParameters
          while (i < inputArray.Length)
          {
             inputArray[i] = inputArray[i];
-            Console.Write("{0:f2} ", inputArray[i]);
-            Console.Write("{0:f} ", inputArray[i]);
+            //Console.Write("{0:f2} ", inputArray[i]);
+            //Console.Write("{0:f} ", inputArray[i]);
             Console.Write("{0} ", inputArray[i]);
             i++;
          }

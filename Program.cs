@@ -1,7 +1,8 @@
 ﻿using System;
 
 //Массивы в качестве параметров
-// Homework_2._4
+// Homework_2.4
+// Homework_5.4
 
 namespace ArraysForParameters
 {
@@ -37,7 +38,7 @@ namespace ArraysForParameters
             //vector[i] = Convert.ToDouble(Console.ReadLine());
          }
 
-         return new double[] { };
+         return vector;
       }
 
       public static int NumberArrayElements()

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text;
 
 namespace ArraysForParameters
 {
@@ -26,6 +28,12 @@ namespace ArraysForParameters
          // *
 
          Console.ReadKey();
+      }
+
+      public static double[] EnterArrayDouble(string vector, string nameArray)
+      {
+         
+         
       }
 
       public static int NumberArrayElements()

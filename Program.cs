@@ -31,12 +31,18 @@ namespace ArraysForParameters
       {
          double[] vector = new double[size];
          Console.WriteLine("Введите вектор {0}", name);
-         for (int i = 0; i < vector.Length; i++)
+         int i = 0;
+         while (i < vector.Length)
          {
-            Console.Write("Введите элемент под номером {0}: ", i);
+Console.Write("Введите элемент под номером {0}: ", i);
             double.TryParse(Console.ReadLine(), out vector[i]);
             //vector[i] = Convert.ToDouble(Console.ReadLine());
+
+
+            i++;
          }
+
+       
 
          return vector;
       }

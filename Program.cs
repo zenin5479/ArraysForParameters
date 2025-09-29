@@ -66,10 +66,10 @@ namespace ArraysForParameters
 
       public static double[,] FormMatrix(double[] vectorC, double[] vectorP)
       {
-         double[,] z = new double[vectorC.Length, vectorC.Length];
+         double[,] z = new double[vectorC.Length, vectorP.Length];
          for (int i = 0; i < vectorC.Length; i++)
          {
-            for (int j = 0; j < vectorC.Length; j++)
+            for (int j = 0; j < vectorP.Length; j++)
             {
                z[i, j] = vectorC[i] / (vectorP[j] + vectorC[i] * vectorC[i]);
             }

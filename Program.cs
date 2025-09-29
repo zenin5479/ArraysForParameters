@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Xml.Linq;
 
 //Массивы в качестве параметров
 // Homework_2.4

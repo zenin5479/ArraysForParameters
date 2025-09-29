@@ -22,6 +22,7 @@ namespace ArraysForParameters
          {
             Console.WriteLine("Условие выполнено");
             double[,] matrix = FormMatrix(vectorC, vectorP);
+            VivodMatrix(matrix);
          }
          else
          {

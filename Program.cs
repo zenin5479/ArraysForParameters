@@ -29,23 +29,6 @@ namespace ArraysForParameters
          }
 
          Console.ReadKey();
-
-         //float s = 0.0;
-         //s = Sum(C, n);
-         //if (Check(P, n, s))
-         //{
-         //   printf("Условие выполнено\n");
-         //   float** A;
-         //   FormMatrix(A, C, P, n);
-         //   VivodMatrix(A, n);
-         //   int i, j;
-         //   FindMax(A, n, i, j);
-         //   printf("Индексы максимума (%i,%i)", i, j);
-         //}
-         //else
-         //{
-         //   printf("Условие не выполнено");
-         //}
       }
 
       public static void FindMax(double[,] matrix)

@@ -42,20 +42,18 @@ namespace ArraysForParameters
 
       public static double Sum(double[] vector)
       {
-         Console.WriteLine("Введен вектор");
+
          double s = 0.0;
          int i = 0;
          while (i < vector.Length)
          {
-            
             s += vector[i];
             //Console.Write("{0:f2} ", s);
             //Console.Write("{0:f} ", s);
             Console.Write("{0} ", s);
             i++;
          }
-
-         Console.WriteLine();
+         Console.WriteLine("Сумма равна:");
          return s;
       }
 

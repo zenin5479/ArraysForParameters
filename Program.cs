@@ -17,7 +17,6 @@ namespace ArraysForParameters
          double[] vectorP = EnterArrayDouble(size, nameArrayTwo);
          InputArrayDouble(vectorC, nameArrayOne);
          InputArrayDouble(vectorP, nameArrayTwo);
-
          double s = Sum(vectorC);
 
          Console.ReadKey();

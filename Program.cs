@@ -50,18 +50,18 @@ namespace ArraysForParameters
          //}
       }
 
-      public static void FindMax(double[,] z)
+      public static void FindMax(double[,] matrix)
       {
-         double Max = z[0, 0];
+         double Max = matrix[0, 0];
          int imax = 0;
          int jmax = 0;
-         for (int i = 0; i < z.GetLength(0); i++)
+         for (int i = 0; i < matrix.GetLength(0); i++)
          {
-            for (int j = 0; j < z.GetLength(1); j++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
-               if (Max < z[i, j])
+               if (Max < matrix[i, j])
                {
-                  Max = z[i, j];
+                  Max = matrix[i, j];
                   imax = i;
                   jmax = j;
                }

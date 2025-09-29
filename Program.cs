@@ -75,8 +75,8 @@ namespace ArraysForParameters
          {
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
-               //Console.Write("{0:f2} ", matrix[i, j]);
-               Console.Write("{0:f} ", matrix[i, j]);
+               Console.Write("{0:f4} ", matrix[i, j]);
+               //Console.Write("{0:f} ", matrix[i, j]);
                //Console.Write("{0} ", matrix[i, j]);
             }
 

@@ -49,6 +49,25 @@ namespace ArraysForParameters
          //}
       }
 
+      //void FindMax(float** z, int nx, int& imax, int& jmax)
+      //{
+      //   float Max = z[0][0];
+      //   imax = 0;
+      //   jmax = 0;
+      //   for (int i = 0; i < nx; i++)
+      //   {
+      //      for (int j = 0; j < nx; j++)
+      //      {
+      //         if (Max < z[i][j])
+      //         {
+      //            Max = z[i][j];
+      //            imax = i;
+      //            jmax = j;
+      //         }
+      //      }
+      //   }
+      //}
+
       public static void VivodMatrix(double[,] matrix)
       {
          for (int i = 0; i < matrix.GetLength(0); i++)
@@ -77,38 +96,6 @@ namespace ArraysForParameters
 
          return z;
       }
-
-      //void FormMatrix(float**& z, float* x, float* y, int nx)
-      //{
-      //   z = new float*[nx];
-      //   for (int i = 0; i < nx; i++)
-      //   {
-      //      z[i] = new float[nx];
-      //      for (int j = 0; j < nx; j++)
-      //      {
-      //         z[i][j] = x[i] / (y[j] + x[i] * x[i]);
-      //      }
-      //   }
-      //}
-
-      //void FindMax(float** z, int nx, int& imax, int& jmax)
-      //{
-      //   float Max = z[0][0];
-      //   imax = 0;
-      //   jmax = 0;
-      //   for (int i = 0; i < nx; i++)
-      //   {
-      //      for (int j = 0; j < nx; j++)
-      //      {
-      //         if (Max < z[i][j])
-      //         {
-      //            Max = z[i][j];
-      //            imax = i;
-      //            jmax = j;
-      //         }
-      //      }
-      //   }
-      //}
 
       public static bool Check(double[] vector, double sum)
       {

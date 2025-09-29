@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Xml.Linq;
 
 //Массивы в качестве параметров
 // Homework_2.4
@@ -44,23 +43,7 @@ namespace ArraysForParameters
          //}
       }
 
-      public static bool Check(double[] x, double t)
-      {
-         int i = 0;
-         bool fl = true;
-         while (i < x.Length && fl)
-         {
-            if (x[i] < t)
-            {
-               i++;
-            }
-            else
-            {
-               fl = false;
-            }
-         }
-         return fl;
-      }
+
 
       //bool Check(float* x, int nx, float t)
       //{
@@ -117,6 +100,24 @@ namespace ArraysForParameters
       //      }
       //   }
       //}
+
+      public static bool Check(double[] vector, double sum)
+      {
+         int i = 0;
+         bool fl = true;
+         while (i < vector.Length && fl)
+         {
+            if (vector[i] < sum)
+            {
+               i++;
+            }
+            else
+            {
+               fl = false;
+            }
+         }
+         return fl;
+      }
 
       public static double Sum(double[] vector)
       {

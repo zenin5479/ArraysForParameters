@@ -22,6 +22,10 @@ namespace ArraysForParameters
          {
             Console.WriteLine("Условие выполнено");
          }
+         else
+         {
+            Console.WriteLine("Условие не выполнено");
+         }
 
          Console.ReadKey();
 

@@ -47,13 +47,9 @@ namespace ArraysForParameters
          while (i < vector.Length)
          {
             s += vector[i];
-            //Console.WriteLine("{0:f2} ", s);
-            //Console.WriteLine("{0:f} ", s);
-            Console.WriteLine("{0} ", s);
             i++;
          }
 
-         //Console.WriteLine("Сумма равна: {0}", s);
          return s;
       }
 

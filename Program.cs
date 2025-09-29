@@ -21,6 +21,32 @@ namespace ArraysForParameters
          Console.ReadKey();
       }
 
+      public static void Sum(double[] vector, string name)
+      {
+         Console.WriteLine("Введен вектор {0}:", name);
+         int i = 0;
+         while (i < vector.Length)
+         {
+            vector[i] = vector[i];
+            //Console.Write("{0:f2} ", vector[i]);
+            //Console.Write("{0:f} ", vector[i]);
+            Console.Write("{0} ", vector[i]);
+            i++;
+         }
+
+         Console.WriteLine();
+      }
+
+      //float Sum(float* x, int nx)
+      //{
+      //   float s = 0.0;
+      //   for (int i = 0; i < nx; i++)
+      //   {
+      //      s += x[i];
+      //   }
+      //   return s;
+      //}
+
       public static void InputArrayDouble(double[] vector, string name)
       {
          Console.WriteLine("Введен вектор {0}:", name);

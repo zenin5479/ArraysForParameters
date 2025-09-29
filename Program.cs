@@ -1,8 +1,6 @@
 ﻿using System;
 
 //Массивы в качестве параметров
-// Homework_2.4
-// Homework_5.4
 
 namespace ArraysForParameters
 {

@@ -56,22 +56,22 @@ namespace ArraysForParameters
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
                //Console.Write("{0:f2} ", matrix[i, j]);
-               //Console.Write("{0:f} ", matrix[i, j]);
-               Console.Write("{0} ", matrix[i, j]);
+               Console.Write("{0:f} ", matrix[i, j]);
+               //Console.Write("{0} ", matrix[i, j]);
             }
 
             Console.WriteLine();
          }
       }
 
-      public static double[,] FormMatrix(double[] x, double[] y)
+      public static double[,] FormMatrix(double[] vectorC, double[] vectorP)
       {
-         double[,] z = new double[x.Length, x.Length];
-         for (int i = 0; i < x.Length; i++)
+         double[,] z = new double[vectorC.Length, vectorC.Length];
+         for (int i = 0; i < vectorC.Length; i++)
          {
-            for (int j = 0; j < x.Length; j++)
+            for (int j = 0; j < vectorC.Length; j++)
             {
-               z[i, j] = x[i] / (y[j] + x[i] * x[i]);
+               z[i, j] = vectorC[i] / (vectorP[j] + vectorC[i] * vectorC[i]);
             }
          }
 

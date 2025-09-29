@@ -71,25 +71,6 @@ namespace ArraysForParameters
          Console.WriteLine("Индексы максимума: [{0},{1}]", imax, jmax);
       }
 
-      //void FindMax(float** z, int nx, int& imax, int& jmax)
-      //{
-      //   float Max = z[0][0];
-      //   imax = 0;
-      //   jmax = 0;
-      //   for (int i = 0; i < nx; i++)
-      //   {
-      //      for (int j = 0; j < nx; j++)
-      //      {
-      //         if (Max < z[i][j])
-      //         {
-      //            Max = z[i][j];
-      //            imax = i;
-      //            jmax = j;
-      //         }
-      //      }
-      //   }
-      //}
-
       public static void VivodMatrix(double[,] matrix)
       {
          for (int i = 0; i < matrix.GetLength(0); i++)

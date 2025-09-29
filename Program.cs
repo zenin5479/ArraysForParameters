@@ -68,8 +68,6 @@ namespace ArraysForParameters
             }
          }
 
-         //   printf("Индексы максимума (%i,%i)", i, j);
-
          Console.WriteLine("Индексы максимума: [{0},{1}]", imax, jmax);
       }
 

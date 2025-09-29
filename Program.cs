@@ -21,6 +21,7 @@ namespace ArraysForParameters
          if (Check(vectorP, s))
          {
             Console.WriteLine("Условие выполнено");
+            double[,] hj = FormMatrix(vectorC, vectorP);
          }
          else
          {
@@ -47,19 +48,31 @@ namespace ArraysForParameters
          //}
       }
 
+      void VivodMatrix(float** x, int nx)
+      {
+         for (int i = 0; i < nx; i++)
+         {
+            for (int j = 0; j < nx; j++)
+            {
+               printf("%f ", x[i][j]);
+            }
+            printf("\n");
+         }
+      }
+
+
       public static double[,] FormMatrix(double[] x, double[] y)
       {
-         z = new float*[x.Length];
+         double[,] z = new double[x.Length, x.Length];
          for (int i = 0; i < x.Length; i++)
          {
-            z[i] = new float[x.Length];
             for (int j = 0; j < x.Length; j++)
             {
-               z[i][j] = x[i] / (y[j] + x[i] * x[i]);
+               z[i, j] = x[i] / (y[j] + x[i] * x[i]);
             }
          }
 
-         return new double[,] { };
+         return z;
       }
 
       //void FormMatrix(float**& z, float* x, float* y, int nx)

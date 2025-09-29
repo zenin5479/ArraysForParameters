@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 //Массивы в качестве параметров
 // Homework_2.4
@@ -20,8 +21,7 @@ namespace ArraysForParameters
          double s = Sum(vectorC);
          if (Check(vectorP, s))
          {
-
-
+            Console.WriteLine("Условие выполнено");
          }
 
          Console.ReadKey();

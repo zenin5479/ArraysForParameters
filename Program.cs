@@ -64,18 +64,6 @@ namespace ArraysForParameters
          }
       }
 
-      //void VivodMatrix(float** x, int nx)
-      //{
-      //   for (int i = 0; i < nx; i++)
-      //   {
-      //      for (int j = 0; j < nx; j++)
-      //      {
-      //         printf("%f ", x[i][j]);
-      //      }
-      //      printf("\n");
-      //   }
-      //}
-
       public static double[,] FormMatrix(double[] x, double[] y)
       {
          double[,] z = new double[x.Length, x.Length];

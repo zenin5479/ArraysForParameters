@@ -53,16 +53,6 @@ namespace ArraysForParameters
          return s;
       }
 
-      //float Sum(float* x, int nx)
-      //{
-      //   float s = 0.0;
-      //   for (int i = 0; i < nx; i++)
-      //   {
-      //      s += x[i];
-      //   }
-      //   return s;
-      //}
-
       //bool Check(float* x, int nx, float t)
       //{
       //   int i = 0;

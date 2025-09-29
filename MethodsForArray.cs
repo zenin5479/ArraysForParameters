@@ -6,16 +6,16 @@ namespace ArraysForParameters
    {
       public static void FindMax(double[,] matrix)
       {
-         double Max = matrix[0, 0];
+         double max = matrix[0, 0];
          int imax = 0;
          int jmax = 0;
          for (int i = 0; i < matrix.GetLength(0); i++)
          {
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
-               if (Max < matrix[i, j])
+               if (max < matrix[i, j])
                {
-                  Max = matrix[i, j];
+                  max = matrix[i, j];
                   imax = i;
                   jmax = j;
                }
@@ -25,7 +25,7 @@ namespace ArraysForParameters
          Console.WriteLine("Индексы максимума: [{0},{1}]", imax, jmax);
       }
 
-      public static void VivodMatrix(double[,] matrix)
+      public static void OutputMatrix(double[,] matrix)
       {
          for (int i = 0; i < matrix.GetLength(0); i++)
          {

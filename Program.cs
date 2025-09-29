@@ -6,7 +6,7 @@ namespace ArraysForParameters
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
          string nameArrayOne = "C";
          string nameArrayTwo = "P";
@@ -20,7 +20,7 @@ namespace ArraysForParameters
          {
             Console.WriteLine("Условие выполнено");
             double[,] matrix = MethodsForArray.FormMatrix(vectorC, vectorP);
-            MethodsForArray.VivodMatrix(matrix);
+            MethodsForArray.OutputMatrix(matrix);
             MethodsForArray.FindMax(matrix);
          }
          else

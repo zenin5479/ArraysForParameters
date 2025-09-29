@@ -43,20 +43,6 @@ namespace ArraysForParameters
          //}
       }
 
-
-
-      //bool Check(float* x, int nx, float t)
-      //{
-      //   int i = 0;
-      //   bool fl = true;
-      //   while (i < nx && fl)
-      //   {
-      //      if (x[i] < t) i++;
-      //      else fl = false;
-      //   }
-      //   return fl;
-      //}
-
       //void FormMatrix(float**& z, float* x, float* y, int nx)
       //{
       //   z = new float*[nx];

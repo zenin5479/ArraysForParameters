@@ -47,6 +47,62 @@ namespace ArraysForParameters
       //   return s;
       //}
 
+      //bool Check(float* x, int nx, float t)
+      //{
+      //   int i = 0;
+      //   bool fl = true;
+      //   while (i < nx && fl)
+      //   {
+      //      if (x[i] < t) i++;
+      //      else fl = false;
+      //   }
+      //   return fl;
+      //}
+
+      //void FormMatrix(float**& z, float* x, float* y, int nx)
+      //{
+      //   z = new float*[nx];
+      //   for (int i = 0; i < nx; i++)
+      //   {
+      //      z[i] = new float[nx];
+      //      for (int j = 0; j < nx; j++)
+      //      {
+      //         z[i][j] = x[i] / (y[j] + x[i] * x[i]);
+      //      }
+      //   }
+      //}
+
+      //void VivodMatrix(float** x, int nx)
+      //{
+      //   for (int i = 0; i < nx; i++)
+      //   {
+      //      for (int j = 0; j < nx; j++)
+      //      {
+      //         printf("%f ", x[i][j]);
+      //      }
+      //      printf("\n");
+      //   }
+      //}
+
+      //void FindMax(float** z, int nx, int& imax, int& jmax)
+      //{
+      //   float Max = z[0][0];
+      //   imax = 0;
+      //   jmax = 0;
+      //   for (int i = 0; i < nx; i++)
+      //   {
+      //      for (int j = 0; j < nx; j++)
+      //      {
+      //         if (Max < z[i][j])
+      //         {
+      //            Max = z[i][j];
+      //            imax = i;
+      //            jmax = j;
+      //         }
+      //      }
+      //   }
+      //}
+
       public static void InputArrayDouble(double[] vector, string name)
       {
          Console.WriteLine("Введен вектор {0}:", name);

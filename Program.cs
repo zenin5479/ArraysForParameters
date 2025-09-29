@@ -17,8 +17,8 @@ namespace ArraysForParameters
          double[] vectorP = EnterArrayDouble(size, nameArrayTwo);
          InputArrayDouble(vectorC, nameArrayOne);
          InputArrayDouble(vectorP, nameArrayTwo);
-         double s = 0.0;
-         s= Sum(vectorC)
+
+         double s = Sum(vectorC);
 
          Console.ReadKey();
 
@@ -40,7 +40,7 @@ namespace ArraysForParameters
          //}
       }
 
-      public static void Sum(double[] vector)
+      public static double Sum(double[] vector)
       {
          Console.WriteLine("Введен вектор");
          double s = 0.0;
@@ -56,6 +56,7 @@ namespace ArraysForParameters
          }
 
          Console.WriteLine();
+         return s;
       }
 
       //float Sum(float* x, int nx)

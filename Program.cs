@@ -39,19 +39,6 @@ namespace ArraysForParameters
          //}
       }
 
-      public static double Sum(double[] vector)
-      {
-         double s = 0.0;
-         int i = 0;
-         while (i < vector.Length)
-         {
-            s += vector[i];
-            i++;
-         }
-
-         return s;
-      }
-
       //bool Check(float* x, int nx, float t)
       //{
       //   int i = 0;
@@ -107,6 +94,19 @@ namespace ArraysForParameters
       //      }
       //   }
       //}
+
+      public static double Sum(double[] vector)
+      {
+         double s = 0.0;
+         int i = 0;
+         while (i < vector.Length)
+         {
+            s += vector[i];
+            i++;
+         }
+
+         return s;
+      }
 
       public static void InputArrayDouble(double[] vector, string name)
       {

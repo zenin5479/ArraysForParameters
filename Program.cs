@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 //Массивы в качестве параметров
 // Homework_2.4
@@ -23,6 +24,7 @@ namespace ArraysForParameters
             Console.WriteLine("Условие выполнено");
             double[,] matrix = FormMatrix(vectorC, vectorP);
             VivodMatrix(matrix);
+            FindMax(matrix);
          }
          else
          {
@@ -47,6 +49,29 @@ namespace ArraysForParameters
          //{
          //   printf("Условие не выполнено");
          //}
+      }
+
+      public static void FindMax(double[,] z)
+      {
+         double Max = z[0, 0];
+         int imax = 0;
+         int jmax = 0;
+         for (int i = 0; i < z.GetLength(0); i++)
+         {
+            for (int j = 0; j < z.GetLength(1); j++)
+            {
+               if (Max < z[i, j])
+               {
+                  Max = z[i, j];
+                  imax = i;
+                  jmax = j;
+               }
+            }
+         }
+
+         //   printf("Индексы максимума (%i,%i)", i, j);
+
+         Console.WriteLine("Индексы максимума: [{0},{1}]", imax, jmax);
       }
 
       //void FindMax(float** z, int nx, int& imax, int& jmax)

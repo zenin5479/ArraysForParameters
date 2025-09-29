@@ -53,7 +53,7 @@ namespace ArraysForParameters
             i++;
          }
 
-         Console.WriteLine("Сумма равна: {0}", s);
+         //Console.WriteLine("Сумма равна: {0}", s);
          return s;
       }
 

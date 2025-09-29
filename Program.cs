@@ -44,14 +44,14 @@ namespace ArraysForParameters
       {
          Console.WriteLine("Введен вектор");
          double s = 0.0;
-
          int i = 0;
          while (i < vector.Length)
          {
-            vector[i] = vector[i];
-            //Console.Write("{0:f2} ", vector[i]);
-            //Console.Write("{0:f} ", vector[i]);
-            Console.Write("{0} ", vector[i]);
+            
+            s += vector[i];
+            //Console.Write("{0:f2} ", s);
+            //Console.Write("{0:f} ", s);
+            Console.Write("{0} ", s);
             i++;
          }
 

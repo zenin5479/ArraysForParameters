@@ -18,6 +18,11 @@ namespace ArraysForParameters
          InputArrayDouble(vectorC, nameArrayOne);
          InputArrayDouble(vectorP, nameArrayTwo);
          double s = Sum(vectorC);
+         if (Check(vectorP, s))
+         {
+
+
+         }
 
          Console.ReadKey();
 
@@ -37,6 +42,24 @@ namespace ArraysForParameters
          //{
          //   printf("Условие не выполнено");
          //}
+      }
+
+      public static bool Check(double[] x, double t)
+      {
+         int i = 0;
+         bool fl = true;
+         while (i < x.Length && fl)
+         {
+            if (x[i] < t)
+            {
+               i++;
+            }
+            else
+            {
+               fl = false;
+            }
+         }
+         return fl;
       }
 
       //bool Check(float* x, int nx, float t)

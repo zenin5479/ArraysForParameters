@@ -42,14 +42,13 @@ namespace ArraysForParameters
 
       public static double Sum(double[] vector)
       {
-
          double s = 0.0;
          int i = 0;
          while (i < vector.Length)
          {
             s += vector[i];
-            Console.WriteLine("{0:f2} ", s);
-            Console.WriteLine("{0:f} ", s);
+            //Console.WriteLine("{0:f2} ", s);
+            //Console.WriteLine("{0:f} ", s);
             Console.WriteLine("{0} ", s);
             i++;
          }

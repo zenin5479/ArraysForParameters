@@ -54,14 +54,26 @@ namespace ArraysForParameters
          {
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
-               Console.Write("{0:f2} ", matrix[i,j]);
-               Console.Write("{0:f} ", matrix[i,j]);
+               Console.Write("{0:f2} ", matrix[i, j]);
+               Console.Write("{0:f} ", matrix[i, j]);
                Console.Write("{0} ", matrix[i, j]);
             }
 
             Console.WriteLine();
          }
       }
+
+      //void VivodMatrix(float** x, int nx)
+      //{
+      //   for (int i = 0; i < nx; i++)
+      //   {
+      //      for (int j = 0; j < nx; j++)
+      //      {
+      //         printf("%f ", x[i][j]);
+      //      }
+      //      printf("\n");
+      //   }
+      //}
 
       public static double[,] FormMatrix(double[] x, double[] y)
       {
@@ -87,18 +99,6 @@ namespace ArraysForParameters
       //      {
       //         z[i][j] = x[i] / (y[j] + x[i] * x[i]);
       //      }
-      //   }
-      //}
-
-      //void VivodMatrix(float** x, int nx)
-      //{
-      //   for (int i = 0; i < nx; i++)
-      //   {
-      //      for (int j = 0; j < nx; j++)
-      //      {
-      //         printf("%f ", x[i][j]);
-      //      }
-      //      printf("\n");
       //   }
       //}
 

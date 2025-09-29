@@ -48,9 +48,9 @@ namespace ArraysForParameters
          while (i < vector.Length)
          {
             s += vector[i];
-            //Console.Write("{0:f2} ", s);
-            //Console.Write("{0:f} ", s);
-            Console.Write("{0} ", s);
+            Console.WriteLine("{0:f2} ", s);
+            Console.WriteLine("{0:f} ", s);
+            Console.WriteLine("{0} ", s);
             i++;
          }
 

@@ -21,7 +21,7 @@ namespace ArraysForParameters
          if (Check(vectorP, s))
          {
             Console.WriteLine("Условие выполнено");
-            double[,] hj = FormMatrix(vectorC, vectorP);
+            double[,] matrix = FormMatrix(vectorC, vectorP);
          }
          else
          {

@@ -47,6 +47,21 @@ namespace ArraysForParameters
          //}
       }
 
+      public static double[,] FormMatrix(double[] x, double[] y)
+      {
+         z = new float*[x.Length];
+         for (int i = 0; i < x.Length; i++)
+         {
+            z[i] = new float[x.Length];
+            for (int j = 0; j < x.Length; j++)
+            {
+               z[i][j] = x[i] / (y[j] + x[i] * x[i]);
+            }
+         }
+
+         return new double[,] { };
+      }
+
       //void FormMatrix(float**& z, float* x, float* y, int nx)
       //{
       //   z = new float*[nx];

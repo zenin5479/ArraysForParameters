@@ -48,18 +48,20 @@ namespace ArraysForParameters
          //}
       }
 
-      void VivodMatrix(float** x, int nx)
+      public static void VivodMatrix(double[,] matrix)
       {
-         for (int i = 0; i < nx; i++)
+         for (int i = 0; i < matrix.GetLength(0); i++)
          {
-            for (int j = 0; j < nx; j++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
-               printf("%f ", x[i][j]);
+               Console.Write("{0:f2} ", matrix[i,j]);
+               Console.Write("{0:f} ", matrix[i,j]);
+               Console.Write("{0} ", matrix[i, j]);
             }
-            printf("\n");
+
+            Console.WriteLine();
          }
       }
-
 
       public static double[,] FormMatrix(double[] x, double[] y)
       {

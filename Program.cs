@@ -18,9 +18,6 @@ namespace ArraysForParameters
          InputArrayDouble(vectorC, nameArrayOne);
          InputArrayDouble(vectorP, nameArrayTwo);
 
-
-
-
          Console.ReadKey();
 
          //float s = 0.0;
